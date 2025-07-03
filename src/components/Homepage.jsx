@@ -13,6 +13,11 @@ import Owner from './Owner';
 import Contact from './Contact';
 import Footer from './Footer';
 import 'flowbite';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const Homepage = () => {
     return (
@@ -21,56 +26,30 @@ const Homepage = () => {
 
             <Navbar />
 
-
             {/* header content   */}
-            <header className="relative w-full">
-                <div id="gallery" className="relative w-full" data-carousel="slide">
-
-                    {/* Carousel Wrapper */}
-                    <div className="relative h-64 overflow-hidden rounded-b-lg sm:h-80 md:h-96">
-
-                        <div className="duration-700 ease-in-out" data-carousel-item="active">
-                            <img src={Img1} className="absolute block w-full h-full object-cover" alt="Slide 1" />
-                        </div>
-
-                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src={Img2} className="absolute block w-full h-full object-cover" alt="Slide 2" />
-                        </div>
-
-                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src={Img3} className="absolute block w-full h-full object-cover" alt="Slide 3" />
-                        </div>
-
-                    </div>
-
-                    {/* Slider Controls */}
-                    <button
-                        type="button"
-                        className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                        data-carousel-prev
-                    >
-                        <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/50 group-hover:bg-white/80">
-                            <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-                            </svg>
-                        </span>
-                    </button>
-
-                    <button
-                        type="button"
-                        className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                        data-carousel-next
-                    >
-                        <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/50 group-hover:bg-white/80">
-                            <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </span>
-                    </button>
-                </div>
+            <header className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
+                <Swiper
+                    modules={[Autoplay, Pagination, Navigation]}
+                    autoplay={{ delay: 3000, disableOnInteraction: false }}
+                    loop={true}
+                    navigation
+                    pagination={{ clickable: true }}
+                    className="w-full h-full"
+                >
+                    <SwiperSlide>
+                        <img src={Img1} className="w-full h-full object-cover" alt="Slide 1" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={Img2} className="w-full h-full object-cover" alt="Slide 2" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={Img3} className="w-full h-full object-cover" alt="Slide 3" />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={Img4} className="w-full h-full object-cover" alt="Slide 3" />
+                    </SwiperSlide>
+                </Swiper>
             </header>
-
-
 
 
             {/* main  */}
