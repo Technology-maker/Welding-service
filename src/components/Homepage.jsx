@@ -21,72 +21,47 @@ const Homepage = () => {
             <Navbar />
 
             {/* header content   */}
-            <header className="text-white text-center py-0.5">
-                <div id="gallery" className="relative w-full">
-                    <div className="relative h-64 overflow-hidden rounded-b-sm sm:h-80 md:h-96">
-                        <div className="duration-700 ease-in-out" data-carousel-item>
-                            <img src={Img1} className="w-full h-full object-cover" alt="Gate Img" />
-                        </div>
-                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src={Img2} className="w-full h-full object-cover" alt="Home Img" />
-                        </div>
-                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src={Img3} className="w-full h-full object-cover" alt="Metal Image" />
-                        </div>
-                        <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src={Img4} className="w-full h-full object-cover" alt="Stand Img" />
-                        </div>
-                    </div>
+            <header className="relative w-full">
+      <div id="gallery" className="relative w-full" data-carousel="slide">
+        {/* Carousel Wrapper */}
+        <div className="relative h-64 overflow-hidden rounded-b-lg sm:h-80 md:h-96">
+          <div className="duration-700 ease-in-out" data-carousel-item="active">
+            <img src={Img1} className="absolute block w-full h-full object-cover" alt="Slide 1" />
+          </div>
+          <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src={Img2} className="absolute block w-full h-full object-cover" alt="Slide 2" />
+          </div>
+          <div className="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src={Img3} className="absolute block w-full h-full object-cover" alt="Slide 3" />
+          </div>
+        </div>
 
-                    <button
-                        type="button"
-                        className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                        data-carousel-prev
-                    >
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                            <svg
-                                className="w-4 h-4 text-white rtl:rotate-180"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 6 10"
-                            >
-                                <path
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M5 1 1 5l4 4"
-                                />
-                            </svg>
-                            <span className="sr-only">Previous</span>
-                        </span>
-                    </button>
+        {/* Slider Controls */}
+        <button
+          type="button"
+          className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/50 group-hover:bg-white/80">
+            <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </span>
+        </button>
 
-                    <button
-                        type="button"
-                        className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                        data-carousel-next
-                    >
-                        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                            <svg
-                                className="w-4 h-4 text-white rtl:rotate-180"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 6 10"
-                            >
-                                <path
-                                    stroke="currentColor"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="m1 9 4-4-4-4"
-                                />
-                            </svg>
-                            <span className="sr-only">Next</span>
-                        </span>
-                    </button>
-                </div>
-            </header>
+        <button
+          type="button"
+          className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/50 group-hover:bg-white/80">
+            <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </header>
 
 
 
