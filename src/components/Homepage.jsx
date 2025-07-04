@@ -138,7 +138,7 @@ const Homepage = () => {
                                     <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-700 transition">Railing & Grills</h3>
                                     <Swiper
                                         modules={[Autoplay, Pagination]}
-                                        autoplay={{ delay: 2000, disableOnInteraction: false }}
+                                        autoplay={{ delay: 2200, disableOnInteraction: false }}
                                         loop={true}
                                         pagination={{ clickable: true }}
                                         className="w-full h-48 mb-4 rounded-xl"
@@ -159,7 +159,7 @@ const Homepage = () => {
                                     <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-700 transition">Other Services</h3>
                                     <Swiper
                                         modules={[Autoplay, Pagination]}
-                                        autoplay={{ delay: 2400, disableOnInteraction: false }}
+                                        autoplay={{ delay: 2000, disableOnInteraction: false }}
                                         loop={true}
                                         pagination={{ clickable: true }}
                                         className="w-full h-48 mb-4 rounded-xl"
