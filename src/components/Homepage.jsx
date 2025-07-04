@@ -6,9 +6,6 @@ import Img2 from '../assets/img2.jpg'
 import Img3 from '../assets/img3.jpg'
 import Img4 from '../assets/img4.jpg'
 import FeatureCards from './FeatureCards'
-import Gate from '../assets/gates/gate1.jpeg'
-import Roof from '../assets/roofs/roof-img2.jpeg'
-import Grill from '../assets/stairs_grills/img1.jpeg'
 import Owner from './Owner';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -21,8 +18,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // Service slides images
-import Gate1 from '../assets/gates/gate2.jpeg'
-import Gate2 from '../assets/gates/gate3.jpeg'
+import Gate1 from '../assets/gates/gate1.jpeg'
+import Gate2 from '../assets/gates/gate2.jpeg'
 import Gate3 from '../assets/gates/gate4.jpeg'
 import Gate4 from '../assets/gates/gate5.jpeg'
 
@@ -39,12 +36,13 @@ import Ralling4 from '../assets/stairs_grills/img4.jpeg'
 import Other1 from '../assets/othersimg/banch1.jpg'
 import Other2 from '../assets/othersimg/chair1.jpg'
 import Other3 from '../assets/othersimg/stand1.jpg'
-import Other4 from '../assets/othersimg/banch2.jpg'
+import Other4 from '../assets/othersimg/stand2.jpg'
+import other5 from '../assets/othersimg/stand5.jpg'
 
 const gateSlides = [Gate1, Gate2, Gate3, Gate4];
 const roofSlides = [Roof1, Roof2, Roof3, Roof4];
 const grillSlides = [Ralling1, Ralling2, Ralling3, Ralling4];
-const otherSlides = [Other1, Other2, Other3, Other4];
+const otherSlides = [Other1, Other2, Other3, Other4, other5];
 
 const Homepage = () => {
     return (
