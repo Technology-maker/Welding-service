@@ -4,6 +4,7 @@ import Homepage from './components/Homepage';
 import GateService from './components/servicepage/GateService';
 import Roofing from './components/servicepage/Roofing';
 import Grillsservice from './components/servicepage/Grillsservice';
+import OtherSarvices from './components/servicepage/OtherSarvices';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Route path="/" element={<Homepage />} />
       <Route path="/gateservice" element={<GateService />} />
       <Route path="/roofingservice" element={<Roofing />} />
+      <Route path="/otherservice" element={<OtherSarvices />} />
       <Route path="/grillservice" element={<Grillsservice />} />
 
 
