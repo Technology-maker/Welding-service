@@ -1,5 +1,5 @@
 import React from 'react'
-import OwnerImg from '../assets/ownerimage/owner.jpg'
+import OwnerImg from '../assets/ownerimage/owner-removebg-preview.png'
 
 const Owner = () => {
     return (
